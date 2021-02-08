@@ -18,7 +18,7 @@ make sure to update the application.properties file with the right database para
 spring.jpa.hibernate.ddl-auto = update
 spring.datasource.url = jdbc:mysql://eivanovue.com/lookers
 spring.datasource.username = root
-spring.datasource.password = 
+spring.datasource.password = ChonkyFluffers
 server.error.include-message = always
 spring.application.name = lookers-api
 ```

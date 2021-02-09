@@ -39,7 +39,7 @@ public class Car {
 
     private String fuelType;
 
-    private String registered;
+    private boolean isRegistered;
 
     private String imgSrc;
 
@@ -47,7 +47,7 @@ public class Car {
 
     private String registration;
 
-    private TransmissionType transmissionType;
+    private String transmissionType;
 
     public Car() {
     }
@@ -148,12 +148,12 @@ public class Car {
         this.fuelType = fuelType;
     }
 
-    public String getRegistered() {
-        return registered;
+    public boolean getRegistered() {
+        return isRegistered;
     }
 
-    public void setRegistered(String registered) {
-        this.registered = registered;
+    public void setIsRegistered(String registered) {
+        this.isRegistered = isRegistered;
     }
 
     public String getImgSrc() {
@@ -172,11 +172,11 @@ public class Car {
         this.extra = extra;
     }
 
-    public TransmissionType getTransmissionType() {
+    public String getTransmissionType() {
         return transmissionType;
     }
 
-    public void setTransmissionType(TransmissionType transmissionType) {
+    public void setTransmissionType(String transmissionType) {
         this.transmissionType = transmissionType;
     }
 }

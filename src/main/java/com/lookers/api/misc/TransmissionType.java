@@ -1,8 +1,5 @@
 package com.lookers.api.misc;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public enum TransmissionType {
     MANUAL("Manual"), AUTOMATIC("Automatic"), SEMI_AUTOMATIC("Semi-automatic");
 

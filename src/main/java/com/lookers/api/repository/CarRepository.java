@@ -12,6 +12,7 @@ public interface CarRepository extends CrudRepository<Car, Integer> {
 
     Optional<Car> findById(Integer id);
 
-    Car save (Car email);
+    Car save (Car car);
 
+    void delete(Car car);
 }

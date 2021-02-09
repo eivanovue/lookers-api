@@ -11,5 +11,7 @@ public interface CarService {
 
     Optional<Car> getCarById(Integer id);
 
-    Car save(Car email);
+    Car save(Car car);
+
+    void delete(Car car);
 }

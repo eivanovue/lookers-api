@@ -1,7 +1,5 @@
 package com.lookers.api.model;
 
-import com.lookers.api.misc.TransmissionType;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -50,6 +48,14 @@ public class Car {
     private String transmissionType;
 
     public Car() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Integer getMileage() {
@@ -148,11 +154,11 @@ public class Car {
         this.fuelType = fuelType;
     }
 
-    public boolean getRegistered() {
+    public boolean getIsRegistered() {
         return isRegistered;
     }
 
-    public void setIsRegistered(String registered) {
+    public void setIsRegistered(boolean isRegistered) {
         this.isRegistered = isRegistered;
     }
 
@@ -170,6 +176,14 @@ public class Car {
 
     public void setExtra(String extra) {
         this.extra = extra;
+    }
+
+    public String getRegistration() {
+        return registration;
+    }
+
+    public void setRegistration(String registration) {
+        this.registration = registration;
     }
 
     public String getTransmissionType() {

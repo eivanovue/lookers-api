@@ -2,6 +2,8 @@
 
 Lookers API is responsible for handling requests to and from the database. 
 
+https://lookers-api.herokuapp.com/
+
 ## Installation
 
 clone the project by entering the following command

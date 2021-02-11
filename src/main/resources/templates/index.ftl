@@ -4,7 +4,7 @@
         <title>Lookers</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-          <link href="webjars/bootstrap/4.0.0/css/bootstrap.min.css"
+          <link href="webjars/bootstrap/4.5.2/css/bootstrap.min.css"
                 rel="stylesheet"/>
         <style type="text/css">
             <#include "main.css">
@@ -22,7 +22,7 @@
                     <div class="header justify-content-center">
                         <div class="header-items">
                             <h1> Lookers </h1>
-                            <p>for you, you life</p>
+                            <p>for you, for life</p>
                         </div>
                     </div>
                 </div>

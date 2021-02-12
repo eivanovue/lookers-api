@@ -4,7 +4,7 @@
     <title>Lookers</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
     <link href="/webjars/bootstrap/4.5.2/css/bootstrap.min.css"
           rel="stylesheet"/>
 
@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <div class="main-container">
+    <div class="main-container mb-3">
         <div class="row no-margin-bottom justify-content-center">
             <div class="content-header">
                 <img src="${car.imgSrc}" class="img-fluid mb-3"/>

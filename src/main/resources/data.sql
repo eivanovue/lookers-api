@@ -16,7 +16,8 @@ INSERT INTO car (
     img_src,
     extra,
     registration,
-    transmission_type
+    transmission_type,
+    is_sold
 ) VALUES (
     1,
     13900,
@@ -35,5 +36,6 @@ INSERT INTO car (
     'https://lkswebprdcdnep4.azureedge.net:443/api/image/stock/f6fb5a5e-3b9c-4847-aabf-2e5fd9a6af4c?size=1024x768&quality=80',
     'First Edition',
     'NEW (In Stock)',
-    'Automatic'
+    'Automatic',
+    false
 );

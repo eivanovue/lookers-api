@@ -19,11 +19,6 @@ public class CarRestController {
     @Autowired
     private CarService carService;
 
-    public CarRestController() {
-
-    }
-
-
     @GetMapping(value = "/car/{id}")
     public Optional<Car> getCar(@PathVariable Integer id){
         try{

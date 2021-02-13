@@ -51,6 +51,7 @@ class ApiApplicationTests {
 		car.setExtra("First Edition");
 		car.setRegistration("NEW (In Stock)");
 		car.setTransmissionType("Automatic");
+		car.setSold(false);
 
 		//persist into the database
 		carService.save(car);
@@ -74,7 +75,7 @@ class ApiApplicationTests {
 		}
 
 		Assertions.assertThrows(CarNotFoundException.class, () -> {
-			final Car test = carService.getCarById(1).get();
+			final Car test = carService.getCarById(2).get();
 		});
 	}
 

@@ -6,23 +6,20 @@ https://lookers-api.herokuapp.com/
 
 ## Installation
 
-clone the project by entering the following command
+Clone the project by entering the following command
 
 ```bash
 git clone https://github.com/eivanovue/lookers-api.git
 ```
 
-## Usage
+## Database stuff
 
-make sure to update the application.properties file with the right database parameters
+To view the database go to localhost/h2-console
 
 ```properties
-spring.jpa.hibernate.ddl-auto = update
-spring.datasource.url = jdbc:mysql://eivanovue.com/lookers
-spring.datasource.username = root
-spring.datasource.password = ChonkyFluffers
-server.error.include-message = always
-spring.application.name = lookers-api
+JBDC_URL = jdbc:h2:mem:lookersdb 
+USERNAME = sa
+PASSWORD = password
 ```
 
 ## Contributing

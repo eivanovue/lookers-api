@@ -47,7 +47,17 @@ public class Car {
 
     private String transmissionType;
 
+    private boolean isSold;
+
     public Car() {
+    }
+
+    public boolean isRegistered() {
+        return isRegistered;
+    }
+
+    public void setRegistered(boolean registered) {
+        isRegistered = registered;
     }
 
     public Integer getId() {
@@ -192,5 +202,13 @@ public class Car {
 
     public void setTransmissionType(String transmissionType) {
         this.transmissionType = transmissionType;
+    }
+
+    public boolean isSold() {
+        return isSold;
+    }
+
+    public void setSold(boolean sold) {
+        isSold = sold;
     }
 }

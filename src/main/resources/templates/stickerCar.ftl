@@ -27,7 +27,7 @@
     <div class="main-container mb-3">
         <div class="row no-margin-bottom justify-content-center">
             <div class="content-header">
-                <img src="${car.imgSrc}" class="img-fluid img-car mb-3"/>
+                <img src="data:image/png;base64, ${car.qrSrc}" class="img-fluid img-car mb-3"/>
                 <h2 class="text-uppercase">${car.brand} ${car.model}</h2>
                 <p>${car.bodyStyle} ${car.engineSize} ${car.doors}dr</p>
             </div>

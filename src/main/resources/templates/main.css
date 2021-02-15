@@ -79,3 +79,117 @@ body {
 .no-margin-bottom {
     margin-bottom: 0;
 }
+
+
+/* sticker */
+.sticker-body{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+}
+.sticker-main-container {
+    padding: 0!important;
+    height: 900px;
+    position: relative;
+}
+.sticker-container {
+    background:#005f95;
+    color:white;
+    width:500px;
+    height:1245px;
+    padding: 20px;
+    border-radius: 50px 0px;
+    position: relative;
+}
+.sticker-header {
+    margin-top: 25px;
+    margin-left: 35px;
+}
+.sticker-header h2 {
+    color:#80afca;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+.sticker-header p {
+    color:#005f95;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: justify;
+}
+.sticker-price-container{
+    padding: 0;
+}
+.sticker-price-header {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.sticker-price-header h4{
+    text-transform: uppercase;
+    color:#80afca;
+    font-size: 16px;
+}
+.sticker-price-header h2{
+    color:#005f95;
+    font-size: 50px;
+    font-weight: 700;
+}
+.sticker-price-header p{
+    color:#4e9c30;
+    font-size: 16px;
+    font-weight: 700;
+}
+.sticker-car-data {
+    width:100%;
+    background:#f8f8f8;
+    padding: 0;
+}
+.sticker-col {
+    margin-top: 12px;
+}
+.sticker-data-list {
+    padding: 20px;
+}
+.sticker-data-header {
+    color:20px;
+    color:#005f95;
+}
+.sticker-data-text {
+    color:22.5px;
+    color:#005f95;
+    font-weight: bold;
+}
+.sticker-bottom h3 {
+    font-size: 28px;
+    color:#005f95;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.sticker-bottom ul li {
+    font-size: 25px;
+    color:#005f95;
+    font-weight: 400;
+    line-height: 32px;
+}
+.qr-container {
+    background: white;
+    left:30%;
+    position: absolute;
+
+}
+.qr-container img {
+    margin:0px!important;
+    border-radius: 20px;
+}
+.sticker-footer-items {
+    position: absolute;
+    bottom: 10px;
+}
+.sticker-footer-items  p {
+    margin-bottom: 10px;
+}
+.link-icon {
+    height: 25px;
+    width: 25px;
+}

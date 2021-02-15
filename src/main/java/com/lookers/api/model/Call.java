@@ -27,12 +27,10 @@ public class Call {
     @NotBlank(message = "Please enter your phone number")
     private String phone;
 
-    @NotNull
-    @NotBlank(message = "Please enter a date for your call")
+    @NotNull(message = "Please enter a date for your call")
     private LocalDate date;
 
-    @NotNull
-    @NotBlank(message = "Please enter a time for your call")
+    @NotNull(message = "Please enter a time for your call")
     private LocalTime time;
 
     @ManyToOne(fetch = FetchType.EAGER)

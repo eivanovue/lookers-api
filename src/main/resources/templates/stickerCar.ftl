@@ -28,16 +28,16 @@
         <div class="row no-margin-bottom justify-content-center">
             <div class="content-header">
                 <img src="${car.imgSrc}" class="img-fluid img-car mb-3"/>
-                <h2 class="text-uppercase">${car.make} ${car.model}</h2>
-                <p>${car.body} ${car.engineSize} ${car.doors}dr</p>
+                <h2 class="text-uppercase">${car.brand} ${car.model}</h2>
+                <p>${car.bodyStyle} ${car.engineSize} ${car.doors}dr</p>
             </div>
         </div>
 
         <div class="col-md-12 mb-3">
             <div class="content-header">
-                <h4 class="text-uppercase"> RRP £${car.price}</h4>
-                <h1 style="color:#005f95">£${car.priceAfterDiscount}</h1>
-                <p style="color:blue"> Save £${car.discount} </p>
+                <h4 class="text-uppercase"> RRP £${car.RRP}</h4>
+                <h1 style="color:#005f95">£${car.price}</h1>
+                <p style="color:blue"> Save £${car.saving} </p>
             </div>
 
             <div class="col-md-12 mb-3">
@@ -74,7 +74,7 @@
 
                     <div class="col">
                          <p class="mb-1" style="color:black">Body style:</p>
-                         <h5 class="mb-1" style="color:blue"> ${car.body} </h5>
+                         <h5 class="mb-1" style="color:blue"> ${car.bodyStyle} </h5>
                     </div>
                 </div>
             </div>

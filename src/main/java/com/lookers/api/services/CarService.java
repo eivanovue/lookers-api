@@ -14,4 +14,6 @@ public interface CarService {
     Car save(Car car);
 
     void delete(Car car);
+
+    void addQrCode(Car car);
 }

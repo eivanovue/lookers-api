@@ -1,9 +1,6 @@
 package com.lookers.api.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
@@ -40,6 +37,9 @@ public class Car {
     private boolean isRegistered;
 
     private String imgSrc;
+
+    @Lob
+    private String qrSrc;
 
     private String viewCarUrl;
 
@@ -183,6 +183,12 @@ public class Car {
     public void setImgSrc(String imgSrc) {
         this.imgSrc = imgSrc;
     }
+
+    public String getQrSrc() {
+        return qrSrc;
+    }
+
+    public void setQrSrc(String qrSrc) { this.qrSrc = qrSrc; }
 
     public String getExtra() {
         return extra;

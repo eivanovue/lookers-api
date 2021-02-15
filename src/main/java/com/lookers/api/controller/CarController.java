@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.validation.constraints.Null;
+
 @Controller
 public class CarController {
 
@@ -34,6 +36,11 @@ public class CarController {
 
         if(carService.getCarById(id).isPresent()){
             car = carService.getCarById(id).get();
+
+            if (car.getQrSrc() == null) {
+                carService.addQrCode(car);
+            }
+
             model.addObject("car", car);
         }
 

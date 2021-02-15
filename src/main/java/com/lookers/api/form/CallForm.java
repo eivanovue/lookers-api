@@ -1,9 +1,8 @@
 package com.lookers.api.form;
 
-import com.lookers.api.model.Car;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -11,27 +10,22 @@ import java.time.LocalTime;
 public class CallForm {
 
     @NotNull
-    @NotBlank(message = "Please enter your name")
     private String name;
 
     @NotNull
-    @NotBlank(message = "Please enter your email address")
     @Email(message = "Email should be valid")
     private String email;
 
     @NotNull
-    @NotBlank(message = "Please enter your phone number")
     private String phone;
 
-    @NotNull
-    @NotBlank(message = "Please enter a date for your call")
+    @NotNull(message = "Please enter a date for your booking")
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     private LocalDate date;
 
-    @NotNull
-    @NotBlank(message = "Please enter a time for your call")
+    @NotNull(message = "Please enter a time for your booking")
+    @DateTimeFormat(iso = DateTimeFormat.ISO.TIME)
     private LocalTime time;
-
-    private Car car;
 
     public String getName() {
         return name;
@@ -71,13 +65,5 @@ public class CallForm {
 
     public void setTime(LocalTime time) {
         this.time = time;
-    }
-
-    public Car getCar() {
-        return car;
-    }
-
-    public void setCar(Car car) {
-        this.car = car;
     }
 }

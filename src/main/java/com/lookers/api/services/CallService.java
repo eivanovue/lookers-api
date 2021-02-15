@@ -11,6 +11,8 @@ public interface CallService {
 
     Optional<Call> getCallById(Integer id);
 
+    boolean existsByPhone(String phone);
+
     Call save(Call call);
 
     void delete(Call call);

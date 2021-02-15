@@ -27,7 +27,7 @@ public class TestDriveController {
     /* view booking success screen */
     @GetMapping(value = "/test-drive/view/{id}")
     public ModelAndView testDriveBookingStatus(@PathVariable Integer id){
-        ModelAndView model = new ModelAndView("testDriveStatus");
+        ModelAndView model = new ModelAndView("testDriveSucccess");
 
         TestDrive testDrive;
 
@@ -88,7 +88,7 @@ public class TestDriveController {
             /* persist to db */
             testDriveService.save(testDrive);
 
-            ModelAndView testDriveBooking = new ModelAndView("testDriveStatus");
+            ModelAndView testDriveBooking = new ModelAndView("testDriveSuccess");
             testDriveBooking.setViewName("redirect:/test-drive/view/" + car.getId());
             testDriveBooking.addObject("booking", testDrive);
 

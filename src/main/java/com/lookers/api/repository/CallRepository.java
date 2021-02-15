@@ -12,6 +12,8 @@ public interface CallRepository extends CrudRepository<Call, Integer> {
 
     Optional<Call> findById(Integer id);
 
+    boolean existsByPhone(String phone);
+
     Call save (Call call);
 
     void delete(Call call);

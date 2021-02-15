@@ -1,7 +1,9 @@
 package com.lookers.api.services;
 
 import com.lookers.api.exceptions.CallNotFoundException;
+import com.lookers.api.exceptions.TestDriveNotFoundException;
 import com.lookers.api.model.Call;
+import com.lookers.api.model.TestDrive;
 import com.lookers.api.repository.CallRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,6 +29,11 @@ public class CallServiceImpl implements CallService {
         } else {
             return callRepository.findById(id);
         }
+    }
+
+    @Override
+    public boolean existsByPhone(String phone){
+        return callRepository.existsByPhone(phone);
     }
 
     @Override

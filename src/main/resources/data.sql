@@ -108,6 +108,7 @@ false
 INSERT INTO car (
 id,
   brand,
+  doors,
   model,
   RRP,
   price,
@@ -123,7 +124,8 @@ id,
   is_sold
 ) VALUES (
 4,
-'FORD TRANSIT COURIER PETROL',
+' ',
+5,
 '1.0 EcoBoost Sport Van [6 Speed]',
 19004,
 14750,

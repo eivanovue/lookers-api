@@ -73,7 +73,7 @@ class ApiApplicationTests {
 		}
 
 		Assertions.assertThrows(CarNotFoundException.class, () -> {
-			final Car test = carService.getCarById(2).get();
+			final Car test = carService.getCarById(1).get();
 		});
 	}
 

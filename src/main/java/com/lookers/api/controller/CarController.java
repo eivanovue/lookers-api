@@ -15,7 +15,7 @@ public class CarController {
     private CarService carService;
 
     @GetMapping(value = "/view/car/{id}")
-    public ModelAndView getViewCar(@PathVariable Integer id){
+    public ModelAndView getCar(@PathVariable Integer id){
         ModelAndView model = new ModelAndView("viewCar");
         Car car;
 

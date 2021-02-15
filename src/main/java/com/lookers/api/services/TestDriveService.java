@@ -11,6 +11,8 @@ public interface TestDriveService {
 
     Optional<TestDrive> getTestDriveById(Integer id);
 
+    boolean existsByPhone(String phone);
+
     TestDrive save(TestDrive testDrive);
 
     void delete(TestDrive testDrive);

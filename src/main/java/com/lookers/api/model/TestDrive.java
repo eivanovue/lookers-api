@@ -25,14 +25,13 @@ public class TestDrive {
 
     @NotNull
     @NotBlank(message = "Please enter your phone number")
+    @Column(unique=true)
     private String phone;
 
-    @NotNull
-    @NotBlank(message = "Please enter a date for your test drive")
+    @NotNull(message = "Please enter a date for your booking")
     private LocalDate date;
 
-    @NotNull
-    @NotBlank(message = "Please enter a time for your test drive")
+    @NotNull(message = "Please enter a time for your booking")
     private LocalTime time;
 
     @ManyToOne(fetch = FetchType.EAGER)

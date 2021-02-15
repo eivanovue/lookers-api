@@ -30,6 +30,11 @@ public class TestDriveServiceImpl implements TestDriveService {
     }
 
     @Override
+    public boolean existsByPhone(String phone){
+        return testDriveRepository.existsByPhone(phone);
+    }
+
+    @Override
     public TestDrive save(TestDrive testDrive) {
         return testDriveRepository.save(testDrive);
     }

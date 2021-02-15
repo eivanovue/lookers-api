@@ -12,6 +12,8 @@ public interface TestDriveRepository extends CrudRepository<TestDrive, Integer> 
 
     Optional<TestDrive> findById(Integer id);
 
+    boolean existsByPhone(String phone);
+
     TestDrive save (TestDrive testDrive);
 
     void delete(TestDrive testDrive);

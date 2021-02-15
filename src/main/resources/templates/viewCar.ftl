@@ -28,15 +28,17 @@
         <div class="row no-margin-bottom justify-content-center">
             <div class="content-header">
                 <img src="${car.imgSrc}" class="img-fluid img-car mb-3"/>
-                <h2 class="text-uppercase">${car.make} ${car.model}</h2>
-                <p>${car.body} ${car.engineSize} ${car.doors}dr</p>
+                <h2 class="text-uppercase">${car.brand} ${car.model}</h2>
+                <p>${car.bodyStyle} ${car.engineSize} ${car.doors}dr</p>
             </div>
         </div>
 
         <div class="row justify-content-center">
             <div class="col-md-12">
+                <#if car.buyCarUrl??>
                 <a href="${car.buyCarUrl}" class="btn btn-primary btn-block btn-lookers" role="button"
                    aria-pressed="true"><img class="link-icon" src="/assets/car-solid.svg"/>Buy this car</a>
+                </#if>
             </div>
             <div class="col-md-12">
                 <a href="${car.viewCarUrl}" class="btn btn-primary btn-block btn-lookers" role="button"

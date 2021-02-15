@@ -10,58 +10,42 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    private Integer mileage;
-
-    private Integer doors;
-
-    private Integer year;
-
-    private Integer discount;
-
-    private BigDecimal price;
-
-    private BigDecimal priceAfterDiscount;
-
-    private boolean isDiscounted;
-
-    private String make;
+    private String brand;
 
     private String model;
 
-    private String body;
+    private BigDecimal RRP;
 
-    private String engineSize;
+    private BigDecimal price;
+
+    private BigDecimal saving;
+
+    private Integer mileage;
+
+    private String registration;
 
     private String fuelType;
 
-    private boolean isRegistered;
+    private String engineSize;
+
+    private Integer doors;
+
+    private String bodyStyle;
 
     private String imgSrc;
-
-    @Lob
-    private String qrSrc;
 
     private String viewCarUrl;
 
     private String buyCarUrl;
 
-    private String extra;
+    private Integer idNumber;
 
-    private String registration;
+    private Boolean isSold;
 
-    private String transmissionType;
-
-    private boolean isSold;
+    @Lob
+    private String qrSrc;
 
     public Car() {
-    }
-
-    public boolean isRegistered() {
-        return isRegistered;
-    }
-
-    public void setRegistered(boolean registered) {
-        isRegistered = registered;
     }
 
     public Integer getId() {
@@ -72,68 +56,12 @@ public class Car {
         this.id = id;
     }
 
-    public Integer getMileage() {
-        return mileage;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setMileage(Integer mileage) {
-        this.mileage = mileage;
-    }
-
-    public Integer getDoors() {
-        return doors;
-    }
-
-    public void setDoors(Integer doors) {
-        this.doors = doors;
-    }
-
-    public Integer getYear() {
-        return year;
-    }
-
-    public void setYear(Integer year) {
-        this.year = year;
-    }
-
-    public Integer getDiscount() {
-        return discount;
-    }
-
-    public void setDiscount(Integer discount) {
-        this.discount = discount;
-    }
-
-    public BigDecimal getPrice() {
-        return price;
-    }
-
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
-
-    public BigDecimal getPriceAfterDiscount() {
-        return priceAfterDiscount;
-    }
-
-    public void setPriceAfterDiscount(BigDecimal priceAfterDiscount) {
-        this.priceAfterDiscount = priceAfterDiscount;
-    }
-
-    public boolean isDiscounted() {
-        return isDiscounted;
-    }
-
-    public void setDiscounted(boolean discounted) {
-        isDiscounted = discounted;
-    }
-
-    public String getMake() {
-        return make;
-    }
-
-    public void setMake(String make) {
-        this.make = make;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public String getModel() {
@@ -144,20 +72,44 @@ public class Car {
         this.model = model;
     }
 
-    public String getBody() {
-        return body;
+    public BigDecimal getRRP() {
+        return RRP;
     }
 
-    public void setBody(String body) {
-        this.body = body;
+    public void setRRP(BigDecimal RRP) {
+        this.RRP = RRP;
     }
 
-    public String getEngineSize() {
-        return engineSize;
+    public BigDecimal getPrice() {
+        return price;
     }
 
-    public void setEngineSize(String engineSize) {
-        this.engineSize = engineSize;
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
+    public BigDecimal getSaving() {
+        return saving;
+    }
+
+    public void setSaving(BigDecimal saving) {
+        this.saving = saving;
+    }
+
+    public Integer getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(Integer mileage) {
+        this.mileage = mileage;
+    }
+
+    public String getRegistration() {
+        return registration;
+    }
+
+    public void setRegistration(String registered) {
+        this.registration = registered;
     }
 
     public String getFuelType() {
@@ -168,12 +120,28 @@ public class Car {
         this.fuelType = fuelType;
     }
 
-    public boolean getIsRegistered() {
-        return isRegistered;
+    public String getEngineSize() {
+        return engineSize;
     }
 
-    public void setIsRegistered(boolean isRegistered) {
-        this.isRegistered = isRegistered;
+    public void setEngineSize(String engineSize) {
+        this.engineSize = engineSize;
+    }
+
+    public Integer getDoors() {
+        return doors;
+    }
+
+    public void setDoors(Integer doors) {
+        this.doors = doors;
+    }
+
+    public String getBodyStyle() {
+        return bodyStyle;
+    }
+
+    public void setBodyStyle(String bodyStyle) {
+        this.bodyStyle = bodyStyle;
     }
 
     public String getImgSrc() {
@@ -182,44 +150,6 @@ public class Car {
 
     public void setImgSrc(String imgSrc) {
         this.imgSrc = imgSrc;
-    }
-
-    public String getQrSrc() {
-        return qrSrc;
-    }
-
-    public void setQrSrc(String qrSrc) { this.qrSrc = qrSrc; }
-
-    public String getExtra() {
-        return extra;
-    }
-
-    public void setExtra(String extra) {
-        this.extra = extra;
-    }
-
-    public String getRegistration() {
-        return registration;
-    }
-
-    public void setRegistration(String registration) {
-        this.registration = registration;
-    }
-
-    public String getTransmissionType() {
-        return transmissionType;
-    }
-
-    public void setTransmissionType(String transmissionType) {
-        this.transmissionType = transmissionType;
-    }
-
-    public boolean isSold() {
-        return isSold;
-    }
-
-    public void setSold(boolean sold) {
-        isSold = sold;
     }
 
     public String getViewCarUrl() {
@@ -236,5 +166,29 @@ public class Car {
 
     public void setBuyCarUrl(String buyCarUrl) {
         this.buyCarUrl = buyCarUrl;
+    }
+
+    public Integer getIdNumber() {
+        return idNumber;
+    }
+
+    public void setIdNumber(Integer idNumber) {
+        this.idNumber = idNumber;
+    }
+
+    public Boolean getSold() {
+        return isSold;
+    }
+
+    public void setSold(Boolean sold) {
+        isSold = sold;
+    }
+
+    public String getQrSrc() {
+        return qrSrc;
+    }
+
+    public void setQrSrc(String qrSrc) {
+        this.qrSrc = qrSrc;
     }
 }

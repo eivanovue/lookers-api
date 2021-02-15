@@ -51,6 +51,8 @@ class ApiApplicationTests {
 		car.setExtra("First Edition");
 		car.setRegistration("NEW (In Stock)");
 		car.setTransmissionType("Automatic");
+		car.setViewCarUrl("https://www.charleshurstgroup.co.uk/bentley/used-car/bentley/continental-gt/6-0-w12-first-edition-2dr-auto/id/323631");
+		car.setBuyCarUrl("https://www.lookers.co.uk/deal-builder/finance-options/h04-4522216");
 		car.setSold(false);
 
 		//persist into the database

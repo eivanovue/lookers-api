@@ -35,19 +35,19 @@
 
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <a href="https://www.lookers.co.uk/" class="btn btn-primary btn-block btn-lookers" role="button"
-                   aria-pressed="true"><img class="link-icon" src="/assets/window-icon.svg"/>Buy this car</a>
+                <a href="${car.buyCarUrl}" class="btn btn-primary btn-block btn-lookers" role="button"
+                   aria-pressed="true"><img class="link-icon" src="/assets/car-solid.svg"/>Buy this car</a>
             </div>
             <div class="col-md-12">
-                <a href="https://www.lookers.co.uk/" class="btn btn-primary btn-block btn-lookers" role="button"
+                <a href="${car.viewCarUrl}" class="btn btn-primary btn-block btn-lookers" role="button"
                    aria-pressed="true"><img class="link-icon" src="/assets/window-icon.svg"/>Visit our website</a>
             </div>
             <div class="col-md-12">
-                <a href="forms.html" class="btn btn-primary btn-block btn-lookers" role="button"
+                <a href="/call/car/${car.id}" class="btn btn-primary btn-block btn-lookers" role="button"
                    aria-pressed="true"><img class="link-icon" src="/assets/phone-icon.svg"/>Speak with an expert</a>
             </div>
             <div class="col-md-12 mb-3">
-                <a href="forms.html" class="btn btn-primary btn-block btn-lookers" role="button"
+                <a href="/test-drive/car/${car.id}" class="btn btn-primary btn-block btn-lookers" role="button"
                    aria-pressed="true"><img class="link-icon" src="/assets/map-icon.svg"/>Book a test drive</a>
             </div>
         </div>

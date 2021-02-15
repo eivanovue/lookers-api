@@ -24,6 +24,7 @@ public class TestDriveController {
     @Autowired
     private TestDriveService testDriveService;
 
+    /* view booking success screen */
     @GetMapping(value = "/test-drive/view/{id}")
     public ModelAndView testDriveBookingStatus(@PathVariable Integer id){
         ModelAndView model = new ModelAndView("testDriveStatus");
@@ -38,6 +39,7 @@ public class TestDriveController {
         return model;
     }
 
+    /* go to create a test drive booking view */
     @GetMapping(value = "/test-drive/car/{id}")
     public ModelAndView showTestDriveBookingForm(@PathVariable Integer id){
         ModelAndView model = new ModelAndView("bookTestDrive");
@@ -53,6 +55,7 @@ public class TestDriveController {
         return model;
     }
 
+    /* post mapping for creating a test drive booking */
     @PostMapping("/test-drive/car/{id}/create")
     public ModelAndView getTestDriveBookingForm(@PathVariable Integer id,
                                           @Valid TestDriveForm testDriveForm,
@@ -77,7 +80,6 @@ public class TestDriveController {
             /* checks */
             if(testDriveService.existsByPhone(testDrive.getPhone())) {
                 ModelAndView bookTestDrive = new ModelAndView("bookTestDrive");
-//                bookTestDrive.setViewName("redirect:/test-drive/car/" + car.getId());
                 bookTestDrive.addObject("car", car);
                 bookTestDrive.addObject("unique", false);
                 return bookTestDrive;

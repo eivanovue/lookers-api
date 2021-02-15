@@ -98,7 +98,10 @@
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block btn-lookers text-center mb-1">Submit</button>
-                <button type="button" class="btn btn-secondary btn-block">Go back</button>
+                <a href="/view/car/${car.id}">
+                    <button type="button" class="btn btn-secondary btn-block">Go back</button>
+                </a>
+
             </form>
         </div>
     </div>

@@ -17,7 +17,9 @@ INSERT INTO car (
     extra,
     registration,
     transmission_type,
-    is_sold
+    is_sold,
+    view_car_url,
+    buy_car_url
 ) VALUES (
     1,
     13900,
@@ -37,5 +39,7 @@ INSERT INTO car (
     'First Edition',
     'NEW (In Stock)',
     'Automatic',
-    false
+    false,
+    'https://www.charleshurstgroup.co.uk/bentley/used-car/bentley/continental-gt/6-0-w12-first-edition-2dr-auto/id/323631',
+    'https://www.lookers.co.uk/deal-builder/finance-options/h04-4522216'
 );

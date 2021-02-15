@@ -41,6 +41,10 @@ public class Car {
 
     private String imgSrc;
 
+    private String viewCarUrl;
+
+    private String buyCarUrl;
+
     private String extra;
 
     private String registration;
@@ -210,5 +214,21 @@ public class Car {
 
     public void setSold(boolean sold) {
         isSold = sold;
+    }
+
+    public String getViewCarUrl() {
+        return viewCarUrl;
+    }
+
+    public void setViewCarUrl(String viewCarUrl) {
+        this.viewCarUrl = viewCarUrl;
+    }
+
+    public String getBuyCarUrl() {
+        return buyCarUrl;
+    }
+
+    public void setBuyCarUrl(String buyCarUrl) {
+        this.buyCarUrl = buyCarUrl;
     }
 }

@@ -27,4 +27,17 @@ public class CarController {
         return model;
     }
 
+    @GetMapping(value = "/sticker/car/{id}")
+    public ModelAndView getSticker(@PathVariable Integer id){
+        ModelAndView model = new ModelAndView("stickerCar");
+        Car car;
+
+        if(carService.getCarById(id).isPresent()){
+            car = carService.getCarById(id).get();
+            model.addObject("car", car);
+        }
+
+        return model;
+    }
+
 }

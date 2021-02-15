@@ -33,13 +33,73 @@
             </div>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                HERE GOES STICKER INFO
+        <div class="col-md-12 mb-3">
+            <div class="content-header">
+                <h4 class="text-uppercase"> RRP £${car.price}</h4>
+                <h1 style="color:#005f95">£${car.priceAfterDiscount}</h1>
+                <p style="color:blue"> Save £${car.discount} </p>
             </div>
+
+            <div class="col-md-12 mb-3">
+            <div class="list-group" style="background:#f8f8f8; padding-left:10px">
+                <div class="row">
+                    <div class="col">
+                       <p class="mb-1" style="color:black">Mileage:</p>
+                       <h5 class="mb-1" style="color:blue"> ${car.mileage} </h5>
+                    </div>
+
+                    <div class="col">
+                       <p class="mb-1" style="color:black">Engine size:</p>
+                       <h5 class="mb-1" style="color:blue"> ${car.engineSize} </h5>
+                    </div>
+
+                    <div class="w-100"></div>
+
+                    <div class="col">
+                        <p class="mb-1" style="color:black">Registered:</p>
+                        <h5 class="mb-1" style="color:blue"> ${car.registration} </h5>
+                    </div>
+
+                    <div class="col">
+                        <p class="mb-1" style="color:black">Doors:</p>
+                        <h5 class="mb-1" style="color:blue"> ${car.doors} </h5>
+                    </div>
+
+                    <div class="w-100"></div>
+
+                    <div class="col">
+                         <p class="mb-1" style="color:black">Fuel type:</p>
+                         <h5 class="mb-1" style="color:blue"> ${car.fuelType} </h5>
+                    </div>
+
+                    <div class="col">
+                         <p class="mb-1" style="color:black">Body style:</p>
+                         <h5 class="mb-1" style="color:blue"> ${car.body} </h5>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 mb-3" style="padding-top:10px">
+            <p style="color:black"> Scan for more! </p>
+            <ul style="color:blue">
+               <li>Buy it now</li>
+               <li>Visit our website</li>
+               <li>Speak with one of our experts</li>
+               <li>Book a test drive</li>
+            </ul>
         </div>
     </div>
 
+    <div class="footer">
+        <div class="footer-items">
+            <p> 020 8031 1934 </p>
+            <p> www.lookers.co.uk </p>
+        </div>
+    <div>
 </div>
+
+
 </body>
 </html>

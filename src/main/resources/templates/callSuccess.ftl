@@ -16,20 +16,38 @@
     <script src="/webjars/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="container">
-
-    <div class="header">
-        <div class="header-items">
+    <div class="container">
+        <div class="header">
+          <div class="header-items">
             <h1> Lookers </h1>
-            <p>for you, for life</p>
+            <p>for you, you life</p>
+          </div>
         </div>
-    </div>
 
-    <div class="main-container mb-3">
-        <div class="row no-margin-bottom justify-content-center">
-            <img class="img-fluid" src="/assets/loader.gif"/>
+        <div class="main-container confirmation-main-container">
+
+          <div class="text-container">
+            <p> Hi Abc Your request has been successfully submitted. We'll be in contact soon. </p>
+          </div>
+
+          <div class="success-message">
+            <svg viewBox="0 0 76 76" class="success-message__icon icon-checkmark">
+                <circle cx="38" cy="38" r="36"/>
+                <path id="svgPath" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M17.7,40.9l10.9,10.9l28.7-28.7"/>
+            </svg>
+
+          </div>
+
+          <div class="col-md-12 mb-1 lookers-btn-container">
+            <a href="MainPage.html" class="btn btn-primary btn-block btn-lookers lookers-success confirmation-btn" role="button" aria-pressed="true">Back to main page</a>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+
+      <script>
+        setTimeout(function () {
+            document.body.classList.add('active');
+        }, 200);
+      </script>
 </body>
 </html>

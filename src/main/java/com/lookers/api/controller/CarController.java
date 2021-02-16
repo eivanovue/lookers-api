@@ -37,9 +37,10 @@ public class CarController {
         if(carService.getCarById(id).isPresent()){
             car = carService.getCarById(id).get();
 
-            if (car.getQrSrc() == null) {
-                carService.addQrCode(car);
-            }
+//            if (car.getQrSrc() == null) {
+//                carService.addQrCode(car);
+//            }
+            carService.addQrCode(car); // Always gen a QR for testing purposes
 
             model.addObject("car", car);
         }

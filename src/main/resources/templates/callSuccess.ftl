@@ -27,7 +27,7 @@
         <div class="main-container confirmation-main-container">
 
           <div class="text-container">
-            <p> Hi Abc Your request has been successfully submitted. We'll be in contact soon. </p>
+            <p>  Hi ${call.name} Your request for the ${call.date} has been successfully submitted. We'll be in contact soon. </p>
           </div>
 
           <div class="success-message">
@@ -39,7 +39,7 @@
           </div>
 
           <div class="col-md-12 mb-1 lookers-btn-container">
-            <a href="MainPage.html" class="btn btn-primary btn-block btn-lookers lookers-success confirmation-btn" role="button" aria-pressed="true">Back to main page</a>
+            <a href="/view/car/${call.car.id}"  class="btn btn-primary btn-block btn-lookers lookers-success confirmation-btn" role="button" aria-pressed="true">Back to main page</a>
           </div>
         </div>
       </div>

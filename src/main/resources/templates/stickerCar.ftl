@@ -33,7 +33,7 @@
              <div class="sticker-price-header">
                 <h4> RRP £${car.RRP}</h4>
                 <h2>
-                £${car.price}</h1>
+                £${car.price}</h2>
                 <p> Save £${car.saving} </p>
              </div>
              <div class="col-md-12 mb-3 sticker-car-data">

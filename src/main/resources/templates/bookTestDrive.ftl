@@ -43,7 +43,7 @@
             </#if>
             <form class="needs-validation mt-5" novalidate="novalidate" action="/test-drive/car/${car.id}/create"
                   method="post">
-                <h3 class="mt-5 justify-content-center text-dark"> Book a test drive today! </h3>
+                <h3 class="mb-3 justify-content-center text-dark"> Book a test drive today! </h3>
                 <div class="form-group">
                     <label for="name" class="text-dark">Name </label>
                     <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp"

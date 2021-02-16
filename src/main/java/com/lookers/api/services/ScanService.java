@@ -1,5 +1,6 @@
 package com.lookers.api.services;
 
+import com.lookers.api.model.Car;
 import com.lookers.api.model.Scan;
 
 import java.time.LocalDateTime;
@@ -22,7 +23,7 @@ public interface ScanService {
 
     int getNumberOfScansForAllTime();
 
-    int getNumberOfScansForCar();
+    int getNumberOfScansForCar(Car car);
 
     Scan save(Scan scan);
 

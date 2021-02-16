@@ -7,7 +7,9 @@ public class CarScans {
     private Car car;
     private int numberOfScans;
 
-    public CarScans() {
+    public CarScans(Car car, int numberOfScans) {
+        this.car = car;
+        this.numberOfScans = numberOfScans;
     }
 
     public Car getCar() {

@@ -1,6 +1,7 @@
 package com.lookers.api.services;
 
 import com.lookers.api.exceptions.ScanNotFoundException;
+import com.lookers.api.model.Car;
 import com.lookers.api.model.Scan;
 import com.lookers.api.repository.ScanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -63,8 +64,8 @@ public class ScanServiceImpl implements ScanService {
     }
 
     @Override
-    public int getNumberOfScansForCar() {
-        return 0;
+    public int getNumberOfScansForCar(Car car) {
+        return scanRepository.countByCar(car);
     }
 
     @Override

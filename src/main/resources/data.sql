@@ -177,3 +177,21 @@ INSERT INTO car (
 317426,
 false
 );
+
+INSERT INTO scan (id, car_id, scan_date_time)
+VALUES (1, 1, '2021-02-16');
+
+INSERT INTO scan (id, car_id, scan_date_time)
+VALUES (2, 2, '2021-02-16');
+
+INSERT INTO scan (id, car_id, scan_date_time)
+VALUES (3, 3, '2021-02-15');
+
+INSERT INTO scan (id, car_id, scan_date_time)
+VALUES (4, 3, '2021-02-14');
+
+INSERT INTO scan (id, car_id, scan_date_time)
+VALUES (5, 4, '2021-01-22');
+
+INSERT INTO scan (id, car_id, scan_date_time)
+VALUES (6, 5, '2021-01-11');

@@ -7,7 +7,14 @@ import java.time.LocalDateTime;
 public class Scan {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "seq_scan"
+    )
+    @SequenceGenerator(
+            name = "seq_scan",
+            initialValue = 7
+    )
     private Integer id;
 
     @ManyToOne(fetch = FetchType.EAGER)

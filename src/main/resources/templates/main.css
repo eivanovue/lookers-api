@@ -174,13 +174,14 @@ body {
 }
 .qr-container {
     background: white;
-    left:30%;
+    left:23%;
     position: absolute;
-
 }
 .qr-container img {
     margin:0px!important;
-    border-radius: 20px;
+    border-radius: 15px;
+    width:250px;
+    height:250px;
 }
 .sticker-footer-items {
     position: absolute;

@@ -1,10 +1,8 @@
-package com.lookers.api.form;
+package com.lookers.api.dto;
 
-import com.lookers.api.model.Car;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.time.LocalTime;

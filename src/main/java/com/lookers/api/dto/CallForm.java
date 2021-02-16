@@ -1,4 +1,4 @@
-package com.lookers.api.form;
+package com.lookers.api.dto;
 
 import org.springframework.format.annotation.DateTimeFormat;
 

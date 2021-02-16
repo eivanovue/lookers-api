@@ -14,6 +14,16 @@ public interface ScanService {
 
     List<Scan> getScansByDateTimeBetween(LocalDateTime start, LocalDateTime end);
 
+    int getNumberOfScansToday();
+
+    int getNumberOfScansForThePastWeek();
+
+    int getNumberOfScansForThePastMonth();
+
+    int getNumberOfScansForAllTime();
+
+    int getNumberOfScansForCar();
+
     Scan save(Scan scan);
 
     void delete(Scan scan);

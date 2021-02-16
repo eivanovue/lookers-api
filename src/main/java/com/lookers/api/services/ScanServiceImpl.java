@@ -40,6 +40,34 @@ public class ScanServiceImpl implements ScanService {
     }
 
     @Override
+    public int getNumberOfScansToday() {
+        var now = LocalDateTime.now();
+        return scanRepository.findAllByScanDateTimeBetween(now, now.minusDays(1)).size();
+    }
+
+    @Override
+    public int getNumberOfScansForThePastWeek() {
+        var now = LocalDateTime.now();
+        return scanRepository.findAllByScanDateTimeBetween(now, now.minusWeeks(1)).size();
+    }
+
+    @Override
+    public int getNumberOfScansForThePastMonth() {
+        var now = LocalDateTime.now();
+        return scanRepository.findAllByScanDateTimeBetween(now, now.minusMonths(1)).size();
+    }
+
+    @Override
+    public int getNumberOfScansForAllTime() {
+        return scanRepository.findAll().size();
+    }
+
+    @Override
+    public int getNumberOfScansForCar() {
+        return 0;
+    }
+
+    @Override
     public Scan save(Scan scan) {
         return scanRepository.save(scan);
     }

@@ -1,6 +1,6 @@
 package com.lookers.api.controller;
 
-import com.lookers.api.form.TestDriveForm;
+import com.lookers.api.dto.TestDriveForm;
 import com.lookers.api.model.Car;
 import com.lookers.api.model.TestDrive;
 import com.lookers.api.services.CarService;

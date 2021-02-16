@@ -89,14 +89,13 @@ body {
 }
 .sticker-main-container {
     padding: 0!important;
-    height: 900px;
+    padding-bottom:100px!important;
     position: relative;
 }
 .sticker-container {
     background:#005f95;
     color:white;
     width:500px;
-    height:1245px;
     padding: 20px;
     border-radius: 50px 0px;
     position: relative;
@@ -171,19 +170,21 @@ body {
     line-height: 32px;
 }
 .qr-container {
-    background: white;
-    left:23%;
+    width: 100%;
     position: absolute;
+    display: flex;
+    justify-content: center;
 }
 .qr-container img {
     margin:0px!important;
     border-radius: 15px;
-    width:180px;
-    height:180px;
+    width:200px;
+    height:200px;
 }
 .sticker-footer-items {
-    position: absolute;
+    position: relative;
     bottom: 10px;
+    margin-top:120px;
 }
 .sticker-footer-items  p {
     margin-bottom: 10px;

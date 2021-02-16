@@ -28,8 +28,8 @@
         <div class="row no-margin-bottom justify-content-center">
             <div class="content-header">
                 <img src="${car.imgSrc}" class="img-fluid img-car mb-3"/>
-                <h2 class="text-uppercase">${car.brand} ${car.model}</h2>
-                <p>${car.bodyStyle} ${car.engineSize} ${car.doors}dr</p>
+                <h2 class="text-uppercase">${car.brand}</h2>
+                <p>${car.model}</p>
             </div>
         </div>
 

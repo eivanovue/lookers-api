@@ -46,7 +46,8 @@ public class CarServiceImpl implements CarService {
     public void addQrCode(Car car) {
         ByteArrayOutputStream stream =
                 QRCode.from("https://lookers-api.herokuapp.com/view/car/" + car.getId())
-                        .withSize(180, 180)
+                        .withSize(1024, 1024)
+                        .withColor(0xff005f95, 0xffffffff)
                         .stream();
 
         String qrCode = Base64.getEncoder().encodeToString(stream.toByteArray());

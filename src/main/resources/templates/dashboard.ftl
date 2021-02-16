@@ -17,26 +17,27 @@
 </head>
 
 <body>
+
+<h1>Scans Today: ${scansToday}</h1>
+<h1>Scans Past Week: ${scansPastWeek}</h1>
+<h1>Scans Past Month: ${scansPastMonth}</h1>
+<h1>Scans All Time: ${scansAllTime}</h1>
 <table class="table">
     <thead>
     <tr>
         <th scope="col">#</th>
-        <#list SCAN CARS OR SOMETHING?keys as cars>
-        <#list cars[0]?keys as attribute>
-        <th scope="col">${attribute}</th>
-        </#list></#list>
+        <th scope="col">Brand Model</th>
+        <th scope="col">Scans</th>
         <th>Actions</th>
     </tr>
     </thead>
     <tbody>
-    <#list SCAN CARS OR SOMETHING?keys as cars>
-    <#list cars?keys as car>
+    <#list carScansList as carScan>
     <tr>
-        <th scope="row">${car.car.id}</th>
-        <#list car.car?keys as attribute>
-        <td>${car.car[attribute]}</td>
-        </#list>
-        <td><a class="btn btn-primary" href="#" role="button">Sticker</a></td>
+        <th scope="row">${carScan.car.id}</th>
+        <td>${carScan.car.brand} ${carScan.car.model}</td>
+        <td>${carScan.numberOfScans}</td>
+        <td><a class="btn btn-primary" href="/sticker/car/${carScan.car.id}" role="button">Sticker</a></td>
     </tr>
     </#list>
     </tbody>

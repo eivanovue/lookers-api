@@ -1,5 +1,6 @@
 package com.lookers.api.repository;
 
+import com.lookers.api.model.Car;
 import com.lookers.api.model.Scan;
 import org.springframework.data.repository.CrudRepository;
 
@@ -16,6 +17,8 @@ public interface ScanRepository extends CrudRepository<Scan, Integer> {
     List<Scan> findAllByScanDateTimeBetween(
             LocalDateTime scanDateTimeStart,
             LocalDateTime scanDateTimeEnd);
+
+    int countByCar(Car car);
 
     Scan save (Scan scan);
 

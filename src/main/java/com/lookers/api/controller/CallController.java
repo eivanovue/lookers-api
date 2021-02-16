@@ -1,6 +1,6 @@
 package com.lookers.api.controller;
 
-import com.lookers.api.form.CallForm;
+import com.lookers.api.dto.CallForm;
 import com.lookers.api.model.Call;
 import com.lookers.api.model.Car;
 import com.lookers.api.services.CallService;

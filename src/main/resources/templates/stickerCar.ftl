@@ -23,7 +23,7 @@
           </div>
        </div>
        <div class="main-container sticker-main-container mb-3">
-          <div class="row no-margin-bottom justify-content-center">
+          <div class="row no-margin-bottom">
              <div class="sticker-header">
                 <h2>${car.brand}</h2>
                 <p>${car.model}</p>

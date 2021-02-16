@@ -126,16 +126,16 @@ body {
 .sticker-price-header h4{
     text-transform: uppercase;
     color:#80afca;
-    font-size: 16px;
+    font-size: 20px;
 }
 .sticker-price-header h2{
     color:#005f95;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 700;
 }
 .sticker-price-header p{
     color:#4e9c30;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
 }
 .sticker-car-data {

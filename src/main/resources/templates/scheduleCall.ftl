@@ -19,7 +19,7 @@
 <div class="container">
 
     <div class="header">
-        <a href="/view/car/${car.id}" class="btn" style="position:fixed; left:25px; top:40px;" role="button" aria-label="Back">
+        <a href="/view/car/${car.id}" class="btn" style="position:fixed; left:20px; top:40px;" role="button" aria-label="Back">
             <img class="link-icon" src="/assets/back.svg"/>
         </a>
         <div class="header-items">
@@ -42,7 +42,7 @@
             </#if>
             <form class="needs-validation mt-5" novalidate="novalidate" action="/call/car/${car.id}/create"
                   method="post">
-                <h2 class="mb-3 justify-content-center text-dark"> Schedule a call today! </h2>
+                <h3 class="mb-3 justify-content-center text-dark"> Schedule a call today! </h3>
                 <div class="form-group">
                     <label for="name" class="text-dark">Name </label>
                     <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp"

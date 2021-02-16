@@ -89,7 +89,7 @@ public class CallController {
             callService.save(call);
 
             ModelAndView callSuccess = new ModelAndView("callSuccess");
-            callSuccess.setViewName("redirect:/call/view/" + car.getId());
+            callSuccess.setViewName("redirect:/call/view/" + call.getId());
             callSuccess.addObject("call", call);
 
             return callSuccess;

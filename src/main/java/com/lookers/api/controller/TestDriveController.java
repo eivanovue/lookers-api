@@ -27,13 +27,13 @@ public class TestDriveController {
     /* view booking success screen */
     @GetMapping(value = "/test-drive/view/{id}")
     public ModelAndView testDriveBookingStatus(@PathVariable Integer id){
-        ModelAndView model = new ModelAndView("testDriveSucccess");
+        ModelAndView model = new ModelAndView("testDriveSuccess");
 
         TestDrive testDrive;
 
         if(testDriveService.getTestDriveById(id).isPresent()){
             testDrive = testDriveService.getTestDriveById(id).get();
-            model.addObject("booking", testDrive);
+            model.addObject("testDrive", testDrive);
         }
 
         return model;
@@ -88,11 +88,11 @@ public class TestDriveController {
             /* persist to db */
             testDriveService.save(testDrive);
 
-            ModelAndView testDriveBooking = new ModelAndView("testDriveSuccess");
-            testDriveBooking.setViewName("redirect:/test-drive/view/" + car.getId());
-            testDriveBooking.addObject("booking", testDrive);
+            ModelAndView testDriveSuccess = new ModelAndView("testDriveSuccess");
+            testDriveSuccess.setViewName("redirect:/test-drive/view/" + testDrive.getId());
+            testDriveSuccess.addObject("testDrive", testDrive);
 
-            return testDriveBooking;
+            return testDriveSuccess;
         }
 
         ModelAndView bookTestDrive = new ModelAndView("bookTestDrive");

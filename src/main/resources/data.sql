@@ -179,19 +179,19 @@ false
 );
 
 INSERT INTO scan (id, car_id, scan_date_time)
-VALUES (1, 1, '2021-02-16');
+VALUES (343434, 1, '2021-02-16');
 
 INSERT INTO scan (id, car_id, scan_date_time)
-VALUES (2, 2, '2021-02-16');
+VALUES (232323, 2, '2021-02-16');
 
 INSERT INTO scan (id, car_id, scan_date_time)
-VALUES (3, 3, '2021-02-15');
+VALUES (121212, 3, '2021-02-15');
 
 INSERT INTO scan (id, car_id, scan_date_time)
-VALUES (4, 3, '2021-02-14');
+VALUES (454545, 3, '2021-02-14');
 
 INSERT INTO scan (id, car_id, scan_date_time)
-VALUES (5, 4, '2021-01-22');
+VALUES (565656, 4, '2021-01-22');
 
 INSERT INTO scan (id, car_id, scan_date_time)
-VALUES (6, 5, '2021-01-11');
+VALUES (676767, 5, '2021-01-11');

@@ -27,9 +27,9 @@
     <div class="main-container mb-3">
         <div class="row no-margin-bottom justify-content-center">
             <div class="content-header">
-                <img src="${car.imgSrc}" class="img-fluid img-car mb-3"/>
                 <h2 class="text-uppercase">${car.brand}</h2>
                 <p>${car.model}</p>
+                <img src="${car.imgSrc}" class="img-fluid img-car mb-3"/>
             </div>
         </div>
 

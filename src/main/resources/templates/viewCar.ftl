@@ -24,16 +24,18 @@
         </div>
     </div>
 
-    <div class="main-container mb-3">
+    <div class="main-container grey-back mb-3">
         <div class="row no-margin-bottom justify-content-center">
             <div class="content-header">
                 <h2 class="text-uppercase">${car.brand}</h2>
                 <p>${car.model}</p>
-                <img src="${car.imgSrc}" class="img-fluid img-car mb-3"/>
+                    <div class="sticker-img-container">
+                        <img src="${car.imgSrc}" class="img-fluid img-car mb-3"/>
+                    </div>
             </div>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center view-car-container">
             <div class="col-md-12">
                 <#if car.buyCarUrl??>
                 <a href="${car.buyCarUrl}" class="btn btn-primary btn-block btn-lookers" role="button"

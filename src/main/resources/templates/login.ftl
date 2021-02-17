@@ -10,7 +10,7 @@
 
     <style type="text/css">
             <#include "dashboard.css">
-        </style>
+    </style>
 
     <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
     <script src="webjars/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -35,17 +35,26 @@
 
     <!------------------------------main ------------------------------------>
 
-    <div class="main-container">
+    <div class="main-container mb-3">
+        <div class="row no-margin-bottom justify-content-center">
+            <form class="mt-5" action="/login" method="post">
+                <div class="form-group mb-3>
+                    <label class="text-dark"> User Name </label>
+                    <input type="text" class="form-control" name="username"/>
+                </div>
 
-        <form action="/login" method="post">
-            <div><label> User Name : <input type="text" name="username"/> </label></div>
-            <div><label> Password: <input type="password" name="password"/> </label></div>
-            <div><input type="submit" value="Sign In"/></div>
-        </form>
-        <#if error.isPresent()>
-        <p>The email or password you have entered is invalid, try again.</p>
-        </#if>
+                <div class="form-group mb-3">
+                    <label class="text-dark"> Password </label>
+                    <input type="password" class="form-control" name="password"/>
+                </div>
+                <#if error.isPresent()>
+                    <p>The email or password you have entered is invalid, try again.</p>
+                </#if>
 
+                <button type="submit" class="btn btn-primary btn-block btn-lookers text-center mb-3"> Log in </button>
+
+            </form>
+        </div>
     </div>
 
     </body>

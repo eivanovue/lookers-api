@@ -46,18 +46,18 @@
                 <div class="btn-toolbar" role="toolbar">
 
                     <button type="button" class="navigation-btn">
-                        <img class="link-icon" src="/assets/qr-icon.svg" />
-                        <span>Decal generator</span>
+                        <img class="link-icon decal-link-icon" src="/assets/qr-icon.svg" />
+                        <div class="btn-text-container"><span>Decal generator</span></div>
                     </button>
 
                     <button type="button" class="navigation-btn">
-                        <img class="link-icon" src="/assets/database-icon.svg" />
-                        <span>Edit database</span>
+                        <img class="link-icon decal-link-icon" src="/assets/database-icon.svg" style="top:3rem"/>
+                        <div class="btn-text-container"><span>Edit database</span></div>
                     </button>
 
                     <button type="button" class="navigation-btn greyish-btn">
-                        <img class="link-icon" src="/assets/plus-icon.svg" />
-                        <span>Add new car</span>
+                        <img class="link-icon decal-link-icon" src="/assets/plus-icon.svg" />
+                        <div class="btn-text-container"><span>Add new car</span></div>
                     </button>
 
                 </div>

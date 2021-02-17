@@ -115,6 +115,18 @@ nav {
     align-items: center;
     padding: 5rem;
     border: none;
+    position: relative;
+}
+
+.decal-link-icon {
+    position: absolute;
+    top:4.5rem
+}
+
+.btn-text-container {
+    position: absolute;
+    bottom: 1rem;
+    width: 45%;
 }
 
 .btn-toolbar {
@@ -194,7 +206,7 @@ nav {
 .single-row {
     background: #FFFFFF;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -287,6 +299,23 @@ nav {
 
     .menu-text {
         display: none;
+    }
+}
+
+/* table height fix */
+@media only screen and (min-width: 768px) {
+    .car-table{
+        height: 64rem;
+        padding: auto 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .single-row {
+        height: unset;
+    }
+    .car-table-data {
+        padding: auto;
     }
 }
 

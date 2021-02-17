@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.lang.*;
 
 @Controller
 public class DashboardController {
@@ -37,12 +36,8 @@ public class DashboardController {
             carScansList.add(new CarScans(car, scanService.getNumberOfScansForCar(car)));
         });
 
-        carScansList.sort(new Comparator<CarScans>() {
-            @Override
-            public int compare(CarScans o1, CarScans o2) {
-                return Integer.compare(o1.getNumberOfScans(), o2.getNumberOfScans());
-            }
-        });
+        carScansList.sort(Comparator.comparing(CarScans::getNumberOfScans));
+
         Collections.reverse(carScansList);
 
         model.addObject("carScansList", carScansList);

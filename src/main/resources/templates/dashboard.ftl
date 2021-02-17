@@ -93,7 +93,7 @@
               <div class="car-table">
                 <#list carScansList as carScan>
                 <div class="single-row">
-                    <span class="car-index">${carScan.car.id}</span>
+                    <span class="car-index">${carScan?counter}</span>
                     <div class="car-table-data">
                         <p class="car-brand">${carScan.car.brand}</p>
                         <p class="car-model">${carScan.car.model}</p>

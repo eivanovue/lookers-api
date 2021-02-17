@@ -20,7 +20,7 @@
 <div class="container">
 
     <div class="header">
-        <a href="/view/car/${car.id}" class="btn" style="position:fixed; left:20px; top:40px;" role="button" aria-label="Back">
+        <a href="/view/car/${car.id}" class="btn" style="position:absolute; left:20px; top:40px;" role="button" aria-label="Back">
             <img class="link-icon" src="/assets/back.svg"/>
         </a>
         <div class="header-items">

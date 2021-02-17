@@ -9,7 +9,7 @@
           rel="stylesheet"/>
 
     <style type="text/css">
-            <#include "main.css">
+            <#include "dashboard.css">
         </style>
 
     <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
@@ -18,74 +18,97 @@
 
 <body>
 
-<div class="btn-toolbar justify-content-between bg-light" role="toolbar">
-  <div class="btn-group">
-    <button type="button" class="btn btn-secondary">Menu</button>
-  </div>
-  <div>
-    <h1 class="text-dark"> Lookers </h1>
-  </div>
-</div>
+    <!----------------------------- header ---------------------------------->
 
-<div class="main-container">
-    <div class="row">
-      <div class="col-6">
-        <h2 class="text-dark"> Navigation </h2>
-        <div class="btn-toolbar" role="toolbar">
-          <div class="btn-group mr-2" role="group">
-            <button type="button" class="btn btn-primary">Decal generator</button>
-          </div>
-          <div class="btn-group mr-2" role="group">
-            <button type="button" class="btn btn-primary">Edit database</button>
-          </div>
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-primary">Add new car</button>
-          </div>
-        </div>
+    <header class="header">
+        <nav class="nav">
+            <div class="menu-btn-container">
+                <button class="menu-btn">
+                    <img class="link-icon" src="/assets/hamburger-icon.svg" />
+                    <span class="menu-text">Menu</span>
+                </button>
+            </div>
 
-        <div class="" style="margin-top:30px">
-            <h2 class="text-dark"> Scans </h2>
-            <div class="row">
-                <div class="col-sm-3">
-                    <p class="text-dark">Scans Today</p>
-                    <div class="container justify-content text-dark"> ${scansToday} </div>
-                </div>
-                <div class="col-sm-3">
-                    <p class="text-dark">Scans Past Week</p>
-                    <div class="container justify-content text-dark"> ${scansPastWeek} </div>
-                </div>
-                <div class="col-sm-3">
-                    <p class="text-dark">Scans Past Month</p>
-                    <div class="container justify-content text-dark"> ${scansPastMonth} </div>
-                </div>
-                <div class="col-sm-3">
-                    <p class="text-dark">Scans All Time</p>
-                    <div class="container justify-content text-dark"> ${scansAllTime} </div>
+            <h1 class="lookers-header-text"> Lookers </h1>
+        </nav>
+    </header>
+
+    <!------------------------------main ------------------------------------>
+
+    <div class="main-container">
+
+        <div class="main-row">
+
+          <div class="left-col">
+
+              <div class="navigation-container">
+                <h2 class="navigation-header-text"> Navigation </h2>
+                <div class="btn-toolbar" role="toolbar">
+
+                    <button type="button" class="navigation-btn">
+                        <img class="link-icon" src="/assets/qr-icon.svg" />
+                        <span>Decal generator</span>
+                    </button>
+
+                    <button type="button" class="navigation-btn">
+                        <img class="link-icon" src="/assets/database-icon.svg" />
+                        <span>Edit database</span>
+                    </button>
+
+                    <button type="button" class="navigation-btn greyish-btn">
+                        <img class="link-icon" src="/assets/plus-icon.svg" />
+                        <span>Add new car</span>
+                    </button>
+
                 </div>
               </div>
-        </div>
-      </div>
 
-      <div class="col-6">
-          <h2 class="text-dark"> All cars </h2>
-          <table class="table">
-              <tbody>
-              <#list carScansList as carScan>
-              <tr>
-                  <th scope="row">${carScan.car.id}</th>
-                  <td>${carScan.car.brand} ${carScan.car.model}</td>
-                  <td>${carScan.numberOfScans}</td>
-                  <td><a class="btn btn-primary" href="/sticker/car/${carScan.car.id}" role="button">Sticker</a></td>
-              </tr>
-              </#list>
-              </tbody>
-          </table>
-      </div>
+
+            <div class="scan-container">
+                <h2 class="scan-header-text"> Scans </h2>
+                <div class="scan-content-container">
+                    <div class="col-sm-3 scan-content-box">
+                        <p class="scan-item-header">Today</p>
+                        <div class="scan-item-container"> ${scansToday}</div>
+                    </div>
+                    <div class="col-sm-3 scan-content-box">
+                        <p class="scan-item-header">Past Week</p>
+                        <div class="scan-item-container"> ${scansPastWeek} </div>
+                    </div>
+                    <div class="col-sm-3 scan-content-box">
+                        <p class="scan-item-header">Past Month</p>
+                        <div class="scan-item-container"> ${scansPastMonth}  </div>
+                    </div>
+                    <div class="col-sm-3 scan-content-box">
+                        <p class="scan-item-header">All Time</p>
+                        <div class="scan-item-container"> ${scansAllTime} </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+          <div class="car-container">
+              <h2 class="cars-header-text"> All cars </h2>
+
+              <div class="car-table">
+                <#list carScansList as carScan>
+                <div class="single-row">
+                    <span class="car-index">${carScan.car.id}</span>
+                    <div class="car-table-data">
+                        <p class="car-brand">${carScan.car.brand}</p>
+                        <p class="car-model">${carScan.car.model}</p>
+                    </div>
+                    <span class="car-scans">${carScan.numberOfScans}</span>
+                    <span class="car-sticker-btn"><a href="/sticker/car/${carScan.car.id}" role="button">Sticker</a></td></span>
+                </div>
+                </#list>
+              </div>
+          </div>
+
+        </div>
+
 
     </div>
 
-
-</div>
-
-</body>
+    </body>
 </html>

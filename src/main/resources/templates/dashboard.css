@@ -1,0 +1,291 @@
+*,
+*::before,
+*:after{
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+ a {
+     text-decoration: none;
+     color:inherit
+ }
+
+ .main-container {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top:10rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-container {
+        padding: 0 3rem;
+    }
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 100;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+}
+
+li {
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 7rem;
+    align-items: center;
+}
+
+.menu-btn-container {
+    position: absolute;
+    left:0px;
+
+}
+
+.menu-btn {
+    display: flex;
+    width:7rem;
+    height: 7rem;
+    background:#00629a;
+    color:white;
+    border: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn span {
+    font-size: 0.8rem;
+    margin-top: 0.5rem!important;
+}
+
+.lookers-header-text {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #00629a;
+}
+
+.main-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-row{
+        grid-template-columns: 1fr!important;
+    }
+
+}
+
+.navigation-header-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00629a;
+}
+
+.navigation-btn {
+    width:18.7rem;
+    height:18.7rem;
+    background:#00629a;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    border: none;
+}
+
+.btn-toolbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.greyish-btn {
+    background: #F4F4F4!important;
+    color:#00629a;
+}
+
+.scan-header-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00629a;
+}
+
+.scan-container {
+    margin-top: 5rem;
+}
+
+.scan-content-container {
+    display: flex;
+    background: #F4F4F4;
+    padding: 10rem 2rem;
+    border-radius: 1.5rem;
+    margin: 0px 2rem;
+    margin-top: 2rem!important;
+}
+
+.scan-item-header {
+    font-weight: 600;
+    font-size: 14px;
+    color: #005F95;
+}
+
+.scan-item-container {
+    width: 11.4rem;
+    height: 11.4rem;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 6rem;
+    color: #005F95;
+}
+
+.scan-content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-container {
+    margin:0px 2rem;
+}
+
+.cars-header-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00629a;
+}
+
+.car-table {
+    background: #F4F4F4;
+    border-radius: 15px;
+    margin-top: 3rem;
+    padding: 2rem 4rem;
+}
+
+.single-row {
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.single-row:not(:first-child){
+    margin-top: 2rem;
+}
+
+.car-index {
+    font-weight: bold;
+    font-size: 64px;
+    color: #005F95;
+}
+
+.car-brand {
+    font-weight: 500;
+    font-size: 16px;
+    color: #005F95;
+    opacity: 0.5;
+    margin-top: 1rem;
+}
+
+.car-model {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #005F95;
+}
+
+.car-table-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+    margin-left: 1rem;
+    padding:1rem;
+}
+
+.car-scans {
+    display: inline-block;
+    border: 1px solid #4A9831;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 6.3rem;
+    height: 5.4rem;
+    text-align: center;
+    line-height: 5rem;
+
+    font-weight: bold;
+    font-size: 2rem;
+    color: #4A9831;
+    margin:0 1rem;
+}
+
+.car-sticker-btn {
+    width: 10.1rem;
+    height: 5.4rem;
+    background: #00629B;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.car-sticker-btn a {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1300px) and (min-width:768px) {
+
+    .car-brand {
+        font-size: 12px;
+    }
+
+    .car-model {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .car-container{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .menu-text {
+        display: none;
+    }
+}

@@ -93,7 +93,7 @@
               <div class="car-table">
                 <#list carScansList as carScan>
                 <div class="single-row">
-                    <span class="car-index">${carScan.car.id}</span>
+                    <span class="car-index">${carScan?counter}</span>
                     <div class="car-table-data">
                         <p class="car-brand">${carScan.car.brand}</p>
                         <p class="car-model">${carScan.car.model}</p>
@@ -109,6 +109,28 @@
 
 
     </div>
+
+     <script>
+            const getFontSize = (textLength) => {
+            const baseSize = 6;
+            let fontSize = 6;
+            if (textLength >= 3) {
+                fontSize = baseSize - 3;
+            }
+            else if (textLength >= 5) {
+                fontSize = baseSize - 4;
+            }
+
+               return fontSize.toString().concat('rem');
+            }
+
+            const texts = document.querySelectorAll('.scan-item-container')
+
+            texts.forEach(text => {
+                let _text = text.textContent.trim();
+                text.style.fontSize = getFontSize(_text.length)
+            })
+        </script>
 
     </body>
 </html>

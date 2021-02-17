@@ -289,3 +289,76 @@ nav {
         display: none;
     }
 }
+
+
+/* login page */
+
+.dashboard-header-text {
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: #005F95;
+}
+
+.login-header {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #00629B;
+}
+
+.login-container {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 15rem;
+}
+
+.login-sub-header {
+    font-weight: 500;
+    font-size: 15px;
+    color: #00629B;
+    margin-top: 2rem;
+}
+
+.form-label-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #00629B;
+}
+
+.form-input-box {
+    height: 5rem;
+    border-color: #00629B;
+    font-size: 2.5rem;
+}
+
+.lookers-login {
+    background: #00629B;
+    height: 5rem;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 4rem;
+}
+
+.invalid-login {
+    color: tomato;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .login-container {
+        width: 60%;
+        margin-top: 10rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .login-container {
+        width: 80%;
+        margin-top: 8rem;
+    }
+
+     .form-input-box {
+            height: 4rem;
+            font-size: 1.8rem;
+     }
+}

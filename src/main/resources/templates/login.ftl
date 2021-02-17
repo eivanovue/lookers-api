@@ -36,26 +36,33 @@
     <!------------------------------main ------------------------------------>
 
     <div class="main-container mb-3">
-        <div class="row no-margin-bottom justify-content-center">
-            <form class="mt-5" action="/login" method="post">
-                <div class="form-group mb-3>
-                    <label class="text-dark"> User Name </label>
-                    <input type="text" class="form-control" name="username"/>
-                </div>
+        <h2 class="dashboard-header-text">Dashboard</h2>
+        <div class="login-container">
+            <h3 class="login-header">Log In</h3>
+            <p class="login-sub-header">Please log in using your details below</p>
+            <div class="form-container">
+                <form class="mt-5" action="/login" method="post">
+                    <div class="form-group mb-3">
+                        <label class="form-label-text"> User Name </label>
+                        <input type="text" class="form-control form-input-box" name="username"/>
+                    </div>
 
-                <div class="form-group mb-3">
-                    <label class="text-dark"> Password </label>
-                    <input type="password" class="form-control" name="password"/>
-                </div>
-                <#if error.isPresent()>
-                    <p>The email or password you have entered is invalid, try again.</p>
-                </#if>
+                    <div class="form-group mb-3">
+                        <label class="form-label-text"> Password </label>
+                        <input type="password" class="form-control form-input-box" name="password"/>
+                    </div>
+                    <#if error.isPresent()>
+                        <p class="invalid-login">The email or password you have entered is invalid, try again.</p>
+                    </#if>
 
-                <button type="submit" class="btn btn-primary btn-block btn-lookers text-center mb-3"> Log in </button>
+                    <button type="submit" class="btn btn-primary btn-block btn-lookers lookers-login text-center mb-3"> Log in </button>
 
-            </form>
+                </form>
+            </div>
+
         </div>
     </div>
 
-    </body>
+ </body>
+
 </html>

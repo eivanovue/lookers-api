@@ -26,7 +26,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/dashboard").authenticated()
+                .antMatchers("/dashboard", "/dashboard/**").authenticated()
                 .antMatchers("/**").permitAll()
                 .and()
                 .formLogin()
@@ -39,6 +39,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .logoutUrl("/logout")
                 .permitAll();
     }
+
+
 
     @Bean
     public PasswordEncoder passwordEncoder() {

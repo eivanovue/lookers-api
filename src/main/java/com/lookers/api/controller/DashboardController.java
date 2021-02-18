@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Controller
 public class DashboardController {
@@ -29,6 +30,27 @@ public class DashboardController {
         model.addObject("scansPastWeek", scanService.getNumberOfScansForThePastWeek());
         model.addObject("scansPastMonth", scanService.getNumberOfScansForThePastMonth());
         model.addObject("scansAllTime", scanService.getNumberOfScansForAllTime());
+
+        /* get a DTO containing the car and number of scans for it */
+        List<CarScans> carScansList = new ArrayList<>();
+        carService.getAllCars().forEach(car -> {
+            carScansList.add(new CarScans(car, scanService.getNumberOfScansForCar(car)));
+        });
+
+        carScansList.sort(Comparator.comparing(CarScans::getNumberOfScans));
+
+        Collections.reverse(carScansList);
+
+        List<CarScans> fiveCarScansList = carScansList.stream().limit(5).collect(Collectors.toList());
+
+        model.addObject("carScansList", fiveCarScansList);
+
+        return model;
+    }
+
+    @GetMapping(value = "/dashboard/view/all")
+    public ModelAndView viewAllCards() {
+        ModelAndView model = new ModelAndView("dashboardViewAllCars");
 
         /* get a DTO containing the car and number of scans for it */
         List<CarScans> carScansList = new ArrayList<>();

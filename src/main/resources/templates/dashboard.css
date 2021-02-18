@@ -131,6 +131,11 @@ nav {
     padding: 5rem;
     border: none;
     position: relative;
+    text-align:center;
+}
+
+.navigation-btn:hover {
+    color:white;
 }
 
 .decal-link-icon {

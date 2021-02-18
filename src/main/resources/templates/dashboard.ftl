@@ -46,10 +46,10 @@
                 <h2 class="navigation-header-text"> Navigation </h2>
                 <div class="btn-toolbar" role="toolbar">
 
-                    <button type="button" class="navigation-btn">
+                    <a href="/dashboard/view/all" class="navigation-btn">
                         <img class="link-icon decal-link-icon" src="/assets/car-icon.svg" />
                         <div class="btn-text-container"><span>View all cars</span></div>
-                    </button>
+                    </a>
 
                     <button type="button" class="navigation-btn">
                         <img class="link-icon decal-link-icon" src="/assets/database-icon.svg" style="top:3rem"/>

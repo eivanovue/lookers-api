@@ -425,3 +425,40 @@ nav {
             font-size: 1.8rem;
      }
 }
+
+/* view all */
+.print-btn {
+    width: 11.6rem;
+    height: 4.7rem;
+    background: #00629B;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+    border:none;
+    line-height: 3.5rem;
+    margin-left: 2rem;
+}
+
+.cancel-btn {
+    width: 11.6rem;
+    height: 4.7rem;
+    background: white;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #00629B;
+    border:2px solid #00629B;
+    line-height: 3.5rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-section {
+    margin-top: 5rem;
+}

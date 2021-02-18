@@ -37,11 +37,15 @@
 
     <div class="main-container">
 
+     <h2 class="navigation-header-text"> All cars </h2>
 
-        <table class="table table-striped">
+        <table class="table table-striped table-borderless">
           <thead>
             <tr>
-              <th scope="col">#</th>
+              <th class="active">
+                   <input type="checkbox" class="select-all checkbox" name="select-all" />
+               </th>
+              <th scope="col">Id</th>
               <th scope="col">Brand</th>
               <th scope="col">Model</th>
               <th scope="col">RRP</th>
@@ -54,6 +58,9 @@
           <tbody>
           <#list carScansList as carScans>
             <tr>
+               <td class="active">
+                   <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+               </td>
               <th scope="row">${carScans.car.id}</th>
               <td>${carScans.car.brand}</td>
               <td>${carScans.car.model}</td>
@@ -66,30 +73,45 @@
           </tbody>
         </table>
 
+        <div class="btn-section">
+            <div class="btn-container">
+                <a class="btn cancel-btn" href="">Cancel</a>
+                <a class="btn print-btn" href="">Print</a>
+            </div>
+        </div>
 
 
     </div>
 
-     <script>
-            const getFontSize = (textLength) => {
-            const baseSize = 6;
-            let fontSize = 6;
-            if (textLength >= 3) {
-                fontSize = baseSize - 3;
-            }
-            else if (textLength >= 5) {
-                fontSize = baseSize - 4;
-            }
+        <script>
+            $(function(){
+                //button select all or cancel
+                $("#select-all").click(function () {
+                    var all = $("input.select-all")[0];
+                    console.log(all);
+                    all.checked = !all.checked
+                    var checked = all.checked;
+                    $("input.select-item").each(function (index,item) {
+                        item.checked = checked;
+                    });
+                });
+                //column checkbox select all or cancel
+                $("input.select-all").click(function () {
+                    var checked = this.checked;
+                    $("input.select-item").each(function (index,item) {
+                        item.checked = checked;
+                    });
+                });
+                //check selected items
+                $("input.select-item").click(function () {
+                    var checked = this.checked;
+                    var all = $("input.select-all")[0];
+                    var total = $("input.select-item").length;
+                    var len = $("input.select-item:checked:checked").length;
+                    all.checked = len===total;
+                });
 
-               return fontSize.toString().concat('rem');
-            }
-
-            const texts = document.querySelectorAll('.scan-item-container')
-
-            texts.forEach(text => {
-                let _text = text.textContent.trim();
-                text.style.fontSize = getFontSize(_text.length)
-            })
+            });
         </script>
 
     </body>

@@ -37,46 +37,51 @@
 
     <div class="main-container">
 
-     <h2 class="navigation-header-text"> All cars </h2>
+     <h2 class="navigation-header-text mb-5"> All calls </h2>
 
-        <table class="table table-striped table-borderless">
-          <thead>
-            <tr>
-              <th class="active">
-                   <input type="checkbox" class="select-all checkbox" name="select-all" />
-               </th>
-              <th scope="col">Id</th>
-              <th scope="col">Brand</th>
-              <th scope="col">Model</th>
-              <th scope="col">RRP</th>
-              <th scope="col">Price</th>
-              <th scope="col">Saving</th>
-              <th scope="col">Scans</th>
-
-            </tr>
-          </thead>
-          <tbody>
-          <#list carScansList as carScans>
-            <tr>
-               <td class="active">
-                   <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-               </td>
-              <th scope="row">${carScans.car.id}</th>
-              <td>${carScans.car.brand}</td>
-              <td>${carScans.car.model}</td>
-              <td>£${carScans.car.RRP}</td>
-              <td>£${carScans.car.price}</td>
-              <td>£${carScans.car.saving}</td>
-              <td>${carScans.numberOfScans}</td>
-            </tr>
-           </#list>
-          </tbody>
-        </table>
+        <#if calls?size != 0>
+            <table class="table table-striped table-borderless">
+              <thead>
+                <tr>
+                  <th class="active">
+                       <input type="checkbox" class="select-all checkbox" name="select-all" />
+                   </th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Phone</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Car</th>
+                </tr>
+              </thead>
+              <tbody>
+              <#list calls as call>
+                <tr>
+                   <td class="active">
+                       <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                   </td>
+                  <td>${call.name}</td>
+                  <td>${call.email}</td>
+                  <td>${call.phone}</td>
+                  <td>${call.date}</td>
+                  <td>${call.time}</td>
+                  <td><a href="${call.car.viewCarUrl}" target="_blank">${call.car.brand} ${call.car.model}</a></td>
+                </tr>
+               </#list>
+              </tbody>
+            </table>
+        <#else>
+            <div class="alert alert-secondary" role="alert">
+              There are no scheduled calls.
+            </div>
+        </#if>
 
         <div class="btn-section">
             <div class="btn-container">
                 <a href="/dashboard" class="btn cancel-btn" href="">Go back</a>
-                <a class="btn print-btn" href="">Print</a>
+                <#if calls?size != 0>
+                    <a class="btn print-btn" href="">Print</a>
+                </#if>
             </div>
         </div>
 

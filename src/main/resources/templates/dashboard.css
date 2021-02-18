@@ -135,13 +135,13 @@ nav {
 
 .decal-link-icon {
     position: absolute;
-    top:4.5rem
+    top:3.5rem
 }
 
 .btn-text-container {
     position: absolute;
-    bottom: 1rem;
-    width: 45%;
+    bottom: 2rem;
+    width: 100%;
 }
 
 .btn-toolbar {

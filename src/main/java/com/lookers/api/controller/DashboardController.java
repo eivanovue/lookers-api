@@ -1,8 +1,10 @@
 package com.lookers.api.controller;
 
 import com.lookers.api.dto.CarScans;
+import com.lookers.api.services.CallService;
 import com.lookers.api.services.CarService;
 import com.lookers.api.services.ScanService;
+import com.lookers.api.services.TestDriveService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +24,12 @@ public class DashboardController {
 
     @Autowired
     private CarService carService;
+
+    @Autowired
+    private CallService callService;
+
+    @Autowired
+    private TestDriveService testDriveService;
 
     @GetMapping(value = "/dashboard")
     public ModelAndView dashboard(){
@@ -63,6 +71,22 @@ public class DashboardController {
         Collections.reverse(carScansList);
 
         model.addObject("carScansList", carScansList);
+
+        return model;
+    }
+
+    @GetMapping(value = "/dashboard/view/calls")
+    public ModelAndView viewAllCalls() {
+        ModelAndView model = new ModelAndView("dashboardViewAllCalls");
+        model.addObject("calls", callService.getAllCalls());
+
+        return model;
+    }
+
+    @GetMapping(value = "/dashboard/view/test-drives")
+    public ModelAndView viewAllTestDrives() {
+        ModelAndView model = new ModelAndView("dashboardViewAllTestDrives");
+        model.addObject("testDrives", testDriveService.getAllTestDrives());
 
         return model;
     }

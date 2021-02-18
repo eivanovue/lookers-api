@@ -46,20 +46,24 @@
                 <h2 class="navigation-header-text"> Navigation </h2>
                 <div class="btn-toolbar" role="toolbar">
 
-                    <button type="button" class="navigation-btn">
-                        <img class="link-icon decal-link-icon" src="/assets/car-icon.svg" />
-                        <div class="btn-text-container"><span>View all cars</span></div>
-                    </button>
-
-                    <button type="button" class="navigation-btn">
-                        <img class="link-icon decal-link-icon" src="/assets/database-icon.svg" style="top:3rem"/>
-                        <div class="btn-text-container"><span>Edit database</span></div>
-                    </button>
-
-                    <button type="button" class="navigation-btn greyish-btn">
-                        <img class="link-icon decal-link-icon" src="/assets/plus-icon.svg" />
-                        <div class="btn-text-container"><span>Add new car</span></div>
-                    </button>
+                    <a href="/dashboard/view/all">
+                        <button type="button" class="navigation-btn">
+                            <img class="link-icon decal-link-icon" src="/assets/car-icon.svg" />
+                            <div class="btn-text-container"><span>View all cars</span></div>
+                        </button>
+                    </a>
+                    <a href="/dashboard/view/calls">
+                        <button type="button" class="navigation-btn">
+                            <img class="link-icon decal-link-icon" src="/assets/phone-icon-dashboard.svg"/>
+                            <div class="btn-text-container"><span>View calls</span></div>
+                        </button>
+                    </a>
+                    <a href="/dashboard/view/test-drives">
+                        <button type="button" class="navigation-btn">
+                            <img class="link-icon decal-link-icon" src="/assets/test-drive-dashboard-icon.svg" />
+                            <div class="btn-text-container"><span>View test drives</span></div>
+                        </button>
+                    </a>
 
                 </div>
               </div>

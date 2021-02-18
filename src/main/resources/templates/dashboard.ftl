@@ -48,7 +48,7 @@
 
                     <a href="/dashboard/view/all">
                         <button type="button" class="navigation-btn">
-                            <img class="link-icon decal-link-icon" src="/assets/car-icon.svg" />
+                            <img class="link-icon decal-link-icon" src="/assets/car-icon.svg" style="width:110px"/>
                             <div class="btn-text-container"><span>View all cars</span></div>
                         </button>
                     </a>
@@ -60,7 +60,7 @@
                     </a>
                     <a href="/dashboard/view/test-drives">
                         <button type="button" class="navigation-btn">
-                            <img class="link-icon decal-link-icon" src="/assets/test-drive-dashboard-icon.svg" />
+                            <img class="link-icon decal-link-icon" src="/assets/test-drive-dashboard-icon.svg" style="width:86px"/>
                             <div class="btn-text-container"><span>View test drives</span></div>
                         </button>
                     </a>

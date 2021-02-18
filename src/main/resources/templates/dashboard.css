@@ -161,6 +161,10 @@ nav {
     color:#00629a;
 }
 
+.greyish-btn:hover {
+    color:#00629a!important;
+}
+
 .scan-header-text {
     font-size: 3rem;
     font-weight: 700;

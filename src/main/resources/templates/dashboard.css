@@ -83,6 +83,21 @@ nav {
     color: #00629a;
 }
 
+.logout-btn {
+    position: absolute;
+    right:2rem;
+    width: 11.6rem;
+    height: 4.7rem;
+    background: #F4F4F4;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #00629B;
+    border:none;
+    line-height: 4rem;
+}
+
 .main-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -201,6 +216,25 @@ nav {
     border-radius: 15px;
     margin-top: 3rem;
     padding: 2rem 4rem;
+}
+
+.topic-row {
+    margin: 0 20% 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.topic-row span {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #737373;
+}
+
+.topic-brand {
+    position: relative;
+    left: -10%;
 }
 
 .single-row {

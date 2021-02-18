@@ -30,6 +30,7 @@
             </div>
 
             <h1 class="lookers-header-text"> Lookers </h1>
+            <a class="btn logout-btn" href="/logout">Logout</a>
         </nav>
     </header>
 
@@ -46,8 +47,8 @@
                 <div class="btn-toolbar" role="toolbar">
 
                     <button type="button" class="navigation-btn">
-                        <img class="link-icon decal-link-icon" src="/assets/qr-icon.svg" />
-                        <div class="btn-text-container"><span>Decal generator</span></div>
+                        <img class="link-icon decal-link-icon" src="/assets/car-icon.svg" />
+                        <div class="btn-text-container"><span>View all cars</span></div>
                     </button>
 
                     <button type="button" class="navigation-btn">
@@ -88,9 +89,16 @@
           </div>
 
           <div class="car-container">
-              <h2 class="cars-header-text"> All cars </h2>
+              <h2 class="cars-header-text"> Overview </h2>
 
               <div class="car-table">
+
+                <div class="topic-row">
+                    <span class="">Rank</span>
+                    <span class="topic-brand">Brand & Model</span>
+                    <span class="">Scans</span>
+                </div>
+
                 <#list carScansList as carScan>
                 <div class="single-row">
                     <span class="car-index">${carScan?counter}</span>

@@ -13,7 +13,7 @@ public class MainController {
 
     @GetMapping(value = "/")
     public ModelAndView index() {
-        return new ModelAndView("index");
+        return new ModelAndView("redirect:dashboard");
     }
 
     @GetMapping(value = "/login")

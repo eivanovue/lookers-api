@@ -38,12 +38,12 @@
         <div class="row justify-content-center view-car-container">
             <div class="col-md-12">
                 <#if car.buyCarUrl??>
-                <a href="${car.buyCarUrl}" class="btn btn-primary btn-block btn-lookers" role="button"
+                <a href="${car.buyCarUrl}" target="_blank" class="btn btn-primary btn-block btn-lookers" role="button"
                    aria-pressed="true"><img class="link-icon" src="/assets/car-solid.svg"/>Buy this car</a>
                 </#if>
             </div>
             <div class="col-md-12">
-                <a href="${car.viewCarUrl}" class="btn btn-primary btn-block btn-lookers" role="button"
+                <a href="${car.viewCarUrl}" target="_blank" class="btn btn-primary btn-block btn-lookers" role="button"
                    aria-pressed="true"><img class="link-icon" src="/assets/window-icon.svg"/>Visit our website</a>
             </div>
             <div class="col-md-12">

@@ -178,6 +178,158 @@ INSERT INTO car (
 false
 );
 
+INSERT INTO car (
+  id,
+  brand,
+  model,
+  RRP,
+  price,
+  saving,
+  mileage,
+  registration,
+  fuel_type,
+  engine_size,
+  doors,
+  body_style,
+  img_src,
+  view_car_url,
+  buy_car_url,
+  id_number,
+  is_sold
+) VALUES (
+6,
+'KIA PICANTO HATCHBACK',
+'1.0T GDi GT-line 5dr [4 seats]',
+14190,
+13054,
+1136,
+50,
+'New (In stock)',
+'Petrol',
+'1L',
+5,
+'Hatchback',
+'https://lkswebprdcdnep4.azureedge.net:443/api/image/stock/53f2680a-50e4-4012-a89c-14c50385ffa4?size=800x600&quality=80',
+'https://www.lookers.co.uk/kia/new-in-stock-car/kia/picanto/1-0t-gdi-gt-line-5dr--4-seats-/id/324711',
+'https://www.lookers.co.uk/deal-builder/finance-options/v004-15119n',
+324711,
+false
+);
+
+INSERT INTO car (
+id,
+  brand,
+  model,
+  RRP,
+  price,
+  saving,
+  mileage,
+  registration,
+  fuel_type,
+  engine_size,
+  doors,
+  body_style,
+  img_src,
+  view_car_url,
+  buy_car_url,
+  id_number,
+  is_sold
+) VALUES (
+7,
+'FORD KA+ HATCHBACK',
+'1.2 85 Zetec 5dr',
+6999,
+6699,
+300,
+26591,
+2017,
+'Petrol',
+'1.2L',
+5,
+'Hatchback',
+'https://lkswebprdcdnep4.azureedge.net:443/api/image/stock/e8965c8b-6a67-435a-ad32-3fda24f59610?size=800x600&quality=80',
+'https://www.lookers.co.uk/ford/used-car/ford/ka-/1-2-85-zetec-5dr/id/320388',
+'https://www.lookers.co.uk/deal-builder/finance-options/kshe-942972',
+320388,
+false
+);
+
+INSERT INTO car (
+id,
+  brand,
+  model,
+  RRP,
+  price,
+  saving,
+  mileage,
+  registration,
+  fuel_type,
+  engine_size,
+  doors,
+  body_style,
+  img_src,
+  view_car_url,
+  buy_car_url,
+  id_number,
+  is_sold
+) VALUES (
+8,
+'AUDI Q2 ESTATE',
+'30 TFSI Sport 5dr',
+24850,
+21345,
+3505,
+10,
+'New (In stock)',
+'Petrol',
+'1L',
+5,
+'Estate',
+'https://lkswebprdcdnep4.azureedge.net:443/api/image/stock/451a542a-20ec-42e0-8428-fb8f9632e5d1?size=800x600&quality=80',
+'https://www.lookers.co.uk/audi/new-in-stock-car/audi/q2/30-tfsi-sport-5dr/id/309360',
+'https://www.lookers.co.uk/deal-builder/finance-options/l018-85101n',
+309360,
+false
+);
+
+INSERT INTO car (
+id,
+  brand,
+  model,
+  RRP,
+  price,
+  saving,
+  mileage,
+  registration,
+  fuel_type,
+  engine_size,
+  doors,
+  body_style,
+  img_src,
+  view_car_url,
+  buy_car_url,
+  id_number,
+  is_sold
+) VALUES (
+9,
+'NISSAN JUKE HATCHBACK',
+'1.2 DiG-T Acenta 5dr',
+6999,
+6749,
+250,
+32949,
+2015,
+'Petrol',
+'1.2L',
+5,
+'Hatchback',
+'https://lkswebprdcdnep4.azureedge.net:443/api/image/stock/3dbbfe20-4df6-46f8-8199-072b38f41529?size=800x600&quality=80',
+'https://www.lookers.co.uk/nissan/used-car/nissan/juke/1-2-dig-t-acenta-5dr/id/325801',
+'https://www.lookers.co.uk/deal-builder/finance-options/b45n-557212',
+325801,
+false
+);
+
 INSERT INTO scan (id, car_id, scan_date_time)
 VALUES (343434, 1, '2021-02-16');
 
